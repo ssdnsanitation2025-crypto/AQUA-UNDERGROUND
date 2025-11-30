@@ -1,165 +1,18 @@
-<!doctype html>
-<html lang="hi">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aqua Underground — Leak Detection</title>
-  <style>
-    :root{
-      --yellow:#FFC300;
-      --blue1:#032F4C;
-      --blue2:#02283F;
-      --muted:#D6E8F5;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background: linear-gradient(180deg,#032F4C 0%, #02283F 100%);
-      color:#eef6fb;
-      -webkit-font-smoothing:antialiased;
-    }
-
-    /* HEADER LOGO */
-    header{
-      padding:22px 12px 6px;
-      text-align:center;
-    }
-    .logo{
-      width:220px;           /* -> BADA logo */
-      height:220px;
-      object-fit:contain;
-      border-radius:18px;
-      background: rgba(6,57,87,0.12);
-      padding:12px;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.5);
-      display:inline-block;
-      margin-bottom:10px;
-    }
-    .title{
-      font-size:20px;
-      font-weight:800;
-      color:var(--yellow);
-      margin:6px 0 4px;
-    }
-    .subtitle{
-      font-size:13px;
-      color:var(--muted);
-      margin-bottom:6px;
-    }
-
-    /* HERO BANNER (pipe break image) */
-    .hero-wrap{
-      width:100%;
-      display:flex;
-      justify-content:center;
-      padding:10px 12px;
-    }
-    .hero{
-      width:92%;
-      max-width:1100px;
-      height:260px;               /* banner height - change if chahiye */
-      border-radius:14px;
-      background-image:url('hero.png'); /* ensure file hero.png exists */
-      background-size: cover;
-      background-position: center;
-      background-repeat:no-repeat;
-      box-shadow: 0 18px 50px rgba(0,0,0,0.6);
-      border: 2px solid rgba(255,255,255,0.03);
-    }
-
-    /* CONTENT */
-    .container{
-      width:92%;
-      max-width:1100px;
-      margin:20px auto;
-    }
-    h2{ color:var(--yellow); font-size:18px; margin-bottom:8px; }
-    .card{
-      background: rgba(6,57,87,0.5);
-      padding:14px;
-      border-radius:12px;
-      margin-bottom:12px;
-      border:1px solid rgba(255,255,255,0.04);
-      box-shadow:0 8px 22px rgba(0,0,0,0.45);
-    }
-    .card strong{ display:block; color:var(--yellow); margin-bottom:6px; }
-
-    /* CTA button */
-    .cta-box{ text-align:center; margin:26px 0 50px; }
-    .cta{
-      display:inline-block;
-      width:92%;
-      max-width:760px;
-      background:var(--yellow);
-      color:#042A2A;
-      padding:18px 22px;
-      font-weight:800;
-      font-size:20px;
-      border-radius:16px;
-      text-decoration:none;
-      box-shadow: 0 18px 40px rgba(255,195,0,0.22), 0 0 40px rgba(255,195,0,0.12) inset;
-    }
-
-    footer{ text-align:center; color:#bcd7e4; padding:24px 12px 60px; font-size:13px; }
-
-    /* responsive tweaks */
-    @media (max-width:520px){
-      .logo{ width:150px; height:150px; padding:8px; }
-      .hero{ height:200px; }
-      .cta{ font-size:18px; padding:14px; border-radius:14px; }
-    }
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="logo.png" class="logo" alt="Aqua Underground Logo">
-    <div class="title">Aqua Underground Water Leak Solutions</div>
-    <div class="subtitle">Exact Leak Detection • No Breakage • Fast & Professional Service</div>
-  </header>
-
-  <!-- HERO BANNER: shows hero.png centered as full cover -->
-  <div class="hero-wrap">
-    <div class="hero" role="img" aria-label="Leak detection banner"></div>
+<!-- ========== START: header + hero (replace this whole block) ========== -->
+<header style="text-align:center; padding:20px 12px 8px;">
+  <!-- big centered logo -->
+  <img src="logo.png" alt="Aqua Underground Logo"
+       style="width:280px; height:280px; object-fit:contain; display:block; margin:0 auto; border-radius:6px; box-shadow:0 18px 40px rgba(0,0,0,0.5); background:rgba(6,57,87,0.08); padding:10px;">
+  <div style="margin-top:10px; font-weight:800; color:#FFC300; font-size:20px;">
+    Aqua Underground Water Leak Solutions
   </div>
+  <div style="color:#D6E8F5; font-size:13px; margin-top:4px;">
+    Exact Leak Detection • No Breakage • Fast & Professional Service
+  </div>
+</header>
 
-  <main class="container">
-    <section>
-      <h2>Why Choose Aqua Underground?</h2>
-
-      <div class="card">
-        <strong>✔ Zero Breakage Detection</strong>
-        Pipe leak का exact point detect करते हैं — बिना extra तोड़फोड़।
-      </div>
-
-      <div class="card">
-        <strong>✔ High-Tech Machines</strong>
-        Thermal Scanner • Ultrasonic Scanner • Pressure Mapping Technology
-      </div>
-
-      <div class="card">
-        <strong>✔ Save Time & Money</strong>
-        Leak जल्दी पकड़ लेने से बड़ा नुकसान और repair cost बचती है।
-      </div>
-    </section>
-
-    <section style="margin-top:8px;">
-      <h2>Service Areas</h2>
-      <div style="color:#D6E8F5; font-size:14px; line-height:1.6;">
-        Punjab: Jalandhar • Ludhiana • Amritsar • Mohali • Chandigarh • Patiala • Bathinda • Moga • Ferozepur • Gurdaspur • Hoshiarpur • Kapurthala<br>
-        Himachal: Shimla • Mandi • Kangra • Hamirpur • Dharamshala • Solan • Una
-      </div>
-    </section>
-
-    <div class="cta-box">
-      <a class="cta" href="https://wa.me/916913131304?text=Hello%20Aqua%20Team%2C%20I%20want%20to%20book%20a%20leak%20detection%20service" target="_blank">
-        🚀 अपनी Leak Detection Book करें — WhatsApp पर बात करें
-      </a>
-    </div>
-  </main>
-
-  <footer>© 2025 Aqua Underground Water Leak Solutions. All Rights Reserved.</footer>
-
-</body>
-</html>
+<!-- hero image as an <img> so it loads reliably -->
+<div style="display:flex; justify-content:center; padding:12px;">
+  <img src="hero.png" alt="Pipe leak detection" style="width:92%; max-width:1100px; height:320px; object-fit:cover; border-radius:14px; box-shadow:0 18px 50px rgba(0,0,0,0.55); border:2px solid rgba(255,255,255,0.03);">
+</div>
+<!-- ========== END: header + hero ========== -->
