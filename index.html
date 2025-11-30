@@ -1,18 +1,201 @@
-<!-- ========== START: header + hero (replace this whole block) ========== -->
-<header style="text-align:center; padding:20px 12px 8px;">
-  <!-- big centered logo -->
-  <img src="logo.png" alt="Aqua Underground Logo"
-       style="width:280px; height:280px; object-fit:contain; display:block; margin:0 auto; border-radius:6px; box-shadow:0 18px 40px rgba(0,0,0,0.5); background:rgba(6,57,87,0.08); padding:10px;">
-  <div style="margin-top:10px; font-weight:800; color:#FFC300; font-size:20px;">
-    Aqua Underground Water Leak Solutions
-  </div>
-  <div style="color:#D6E8F5; font-size:13px; margin-top:4px;">
-    Exact Leak Detection • No Breakage • Fast & Professional Service
-  </div>
-</header>
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Aqua Underground — Leak Detection</title>
+  <meta name="description" content="Aqua Underground - Exact underground leak detection. No breakage. Fast & professional." />
+  <style>
+    :root{
+      --bg1:#042b3a;
+      --accent:#f6c400;
+      --muted:#d6e8f5;
+      --maxWidth:950px;
+      --logoSize:240px;
+    }
+    html,body{
+      margin:0;
+      padding:0;
+      background:#042b3a;
+      color:white;
+      font-family:system-ui, sans-serif;
+    }
+    .container{
+      max-width:var(--maxWidth);
+      margin:auto;
+      padding:20px;
+    }
 
-<!-- hero image as an <img> so it loads reliably -->
-<div style="display:flex; justify-content:center; padding:12px;">
-  <img src="hero.png" alt="Pipe leak detection" style="width:92%; max-width:1100px; height:320px; object-fit:cover; border-radius:14px; box-shadow:0 18px 50px rgba(0,0,0,0.55); border:2px solid rgba(255,255,255,0.03);">
+    /* Logo */
+    .logo-box{
+      text-align:center;
+      margin-top:20px;
+    }
+    .logo-box img{
+      width:var(--logoSize);
+      height:auto;
+      border-radius:12px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.5);
+    }
+
+    /* Title */
+    .title{
+      margin-top:15px;
+      font-size:22px;
+      text-align:center;
+      color:var(--accent);
+      font-weight:700;
+    }
+    .subtitle{
+      text-align:center;
+      font-size:14px;
+      color:var(--muted);
+      margin-top:5px;
+    }
+
+    /* Hero Image */
+    .hero{
+      width:100%;
+      margin:25px auto 10px;
+      display:flex;
+      justify-content:center;
+    }
+    .hero img{
+      width:100%;
+      max-width:900px;
+      height:260px;
+      border-radius:14px;
+      object-fit:cover;
+      box-shadow:0 18px 40px rgba(0,0,0,0.55);
+    }
+
+    /* Feature box */
+    .box{
+      background:rgba(255,255,255,0.06);
+      padding:18px;
+      border-radius:10px;
+      margin-top:18px;
+      box-shadow:0 8px 25px rgba(0,0,0,0.3);
+    }
+    .box h3{
+      color:var(--accent);
+      margin:0 0 12px 0;
+    }
+    .point{
+      background:rgba(0,0,0,0.25);
+      padding:12px;
+      border-radius:8px;
+      margin-bottom:12px;
+      color:var(--muted);
+    }
+    .point strong{
+      color:var(--accent);
+      font-size:15px;
+    }
+
+    /* Service Areas */
+    .areas{
+      margin-top:18px;
+      font-size:14px;
+      color:var(--muted);
+      line-height:1.7;
+    }
+    .areas strong{
+      color:var(--accent);
+    }
+
+    /* CTA Button */
+    .cta-wrap{
+      margin-top:26px;
+      text-align:center;
+    }
+    .cta{
+      display:inline-block;
+      width:100%;
+      max-width:900px;
+      background:var(--accent);
+      color:#042b3a;
+      padding:18px;
+      font-size:20px;
+      font-weight:700;
+      text-decoration:none;
+      border-radius:12px;
+      box-shadow:0 18px 40px rgba(0,0,0,0.45);
+    }
+    .cta:hover{
+      transform:scale(1.02);
+    }
+
+    footer{
+      margin-top:30px;
+      text-align:center;
+      color:#9bb8c9;
+      font-size:13px;
+      padding-bottom:30px;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Logo -->
+  <div class="logo-box">
+    <img src="logo.png" alt="Aqua Underground Logo">
+  </div>
+
+  <!-- Heading -->
+  <div class="title">Aqua Underground Water Leak Solutions</div>
+  <div class="subtitle">Exact Leak Detection • No Breakage • Fast & Professional Service</div>
+
+  <!-- Hero -->
+  <div class="hero">
+    <img src="hero.png" alt="Leak Detection">
+  </div>
+
+  <!-- Why choose -->
+  <div class="box">
+    <h3>Why Choose Aqua Underground?</h3>
+
+    <div class="point">
+      <strong>✔ Zero Breakage Detection</strong><br>
+      Pipe leak का exact point detect करते हैं — बिना extra तोड़फोड़ के।
+    </div>
+
+    <div class="point">
+      <strong>✔ High-Tech Machines</strong><br>
+      Thermal Scanner + Ultrasonic Scanner + Pressure Mapping Technology.
+    </div>
+
+    <div class="point">
+      <strong>✔ Save Time & Money</strong><br>
+      Leak जल्दी detect होने से बड़ा नुकसान और repair cost बचती है।
+    </div>
+  </div>
+
+  <!-- Service Areas -->
+  <div class="areas">
+    <strong>Service Areas:</strong><br>
+    Punjab: Jalandhar • Ludhiana • Amritsar • Mohali • Chandigarh • Patiala • Bathinda • Moga • Ferozepur • Gurdaspur • Hoshiarpur • Kapurthala  
+    <br><br>
+    Himachal Pradesh: Shimla • Mandi • Kangra • Hamirpur • Dharamshala • Solan • Una
+  </div>
+
+  <!-- CTA -->
+  <div class="cta-wrap">
+    <a class="cta" 
+       href="https://wa.me/916913131304?text=Hello%20Aqua%20Underground%2C%20I%20want%20to%20book%20a%20leak%20detection%20service." 
+       target="_blank">
+       🚀 अपनी Leak Detection Book करें — WhatsApp पर बात करें
+    </a>
+  </div>
+
+  <footer>
+    © 2025 Aqua Underground Water Leak Solutions. All Rights Reserved.
+  </footer>
+
 </div>
-<!-- ========== END: header + hero ========== -->
+
+</body>
+</html>
