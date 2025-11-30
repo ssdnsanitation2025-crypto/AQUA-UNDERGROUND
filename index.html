@@ -7,233 +7,149 @@
 
   <style>
     :root{
-      --bg-dark:#04243f;
-      --nav:#01263f;
-      --accent:#ffcc00;
-      --card:#06315a;
+      --accent:#FFC300;
+      --bg:#042b42;
+      --card:#083a57;
       --muted:#c7d7ea;
     }
-
-    *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: "Segoe UI", Roboto, Arial, sans-serif;
-      background: linear-gradient(180deg, #04243f 0%, #02263a 100%);
-      color:#eaf4ff;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.45;
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: linear-gradient(180deg, #052b42 0%, #033649 100%);
+      color:white;
+      text-align:center;
     }
 
-    /* header */
-    header{
-      background:var(--nav);
-      padding:14px 18px;
-      display:flex;
-      align-items:center;
-      gap:14px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.25);
-      position:sticky;
-      top:0;
-      z-index:10;
+    /* TOP SECTION */
+    .top{
+      padding:25px 12px 10px;
     }
-    header img{
-      width:88px;
-      height:88px;
+    .top img{
+      width:120px;
+      height:120px;
       object-fit:contain;
-      border-radius:8px;
-      background:linear-gradient(180deg,#06325a,#03304f);
-      padding:6px;
-    }
-    header .brand{
-      display:flex;
-      flex-direction:column;
-      gap:4px;
-    }
-    header h1{
-      margin:0;
-      font-size:18px;
-      letter-spacing:0.3px;
-      color:var(--accent);
-    }
-    header p.small{
-      margin:0;
-      font-size:12px;
-      color:var(--muted);
-    }
-
-    /* main layout */
-    main{
-      padding:28px 18px;
-      display:flex;
-      justify-content:center;
-    }
-
-    .wrap{
-      width:100%;
-      max-width:980px;
-      display:flex;
-      flex-direction:column;
-      gap:18px;
-      min-height: calc(100vh - 140px); /* header+footer approx */
-      justify-content:center; /* vertically center content */
-      padding-bottom:32px;
-    }
-
-    .hero{
-      background: linear-gradient(180deg, rgba(255,204,0,0.06), rgba(0,0,0,0.03));
-      border:1px solid rgba(255,204,0,0.06);
-      padding:18px;
       border-radius:12px;
-      display:flex;
-      gap:18px;
-      align-items:center;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+      background:#03344c;
+      padding:10px;
+      display:block;
+      margin:0 auto 10px;
     }
-
-    .hero-left{
-      flex:1;
-    }
-    .hero h2{
-      margin:0 0 6px 0;
-      color:var(--accent);
+    .title{
       font-size:20px;
+      font-weight:700;
+      color:var(--accent);
+      margin-bottom:4px;
     }
-    .hero p{ margin:0; color:var(--muted); font-size:14px; }
+    .tag{
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:18px;
+    }
 
-    .cards{
-      display:grid;
-      grid-template-columns: 1fr;
-      gap:12px;
-      margin-top:6px;
+    /* CARDS */
+    main{
+      padding:10px 12px 30px;
+      max-width:900px;
+      margin:auto;
+      text-align:left;
+    }
+    h2{
+      color:var(--accent);
+      margin:12px 0;
+      font-size:18px;
     }
     .card{
       background:var(--card);
-      padding:12px 14px;
+      padding:12px;
       border-radius:10px;
-      border:1px solid rgba(255,255,255,0.03);
+      margin-bottom:10px;
+      border:1px solid rgba(255,255,255,0.06);
+      font-size:14px;
     }
-    .card strong{ color:var(--accent); display:block; margin-bottom:6px; }
-
-    /* CTA */
-    .cta-wrap{
-      margin-top:8px;
-      display:flex;
-      gap:12px;
-      align-items:center;
-      justify-content:center;
-    }
-    .cta {
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      width:100%;
-      max-width:540px;
-      justify-content:center;
-      padding:16px 18px;
-      background:var(--accent);
-      color:#001218;
-      font-weight:700;
-      border-radius:12px;
-      border:none;
-      text-decoration:none;
-      box-shadow: 0 8px 20px rgba(1,26,40,0.35);
-      font-size:16px;
+    .card strong{
+      color:var(--accent);
+      display:block;
+      margin-bottom:5px;
     }
 
-    /* service list */
-    .service-small{
-      font-size:13px;
+    /* SERVICE AREA TEXT */
+    .areas{
       color:var(--muted);
       line-height:1.6;
+      font-size:13px;
+    }
+
+    /* WHATSAPP CTA BUTTON */
+    .cta{
+      margin-top:22px;
+      display:block;
+      width:90%;
+      max-width:500px;
+      text-decoration:none;
+      background:var(--accent);
+      color:#062331;
+      font-size:16px;
+      font-weight:700;
+      padding:14px;
+      border-radius:10px;
+      margin-left:auto;
+      margin-right:auto;
+      box-shadow:0 10px 22px rgba(0,0,0,0.3);
     }
 
     footer{
       text-align:center;
-      color:#b9d6f0;
+      padding:20px 10px;
+      color:#b8d4e6;
       font-size:12px;
-      padding:16px 12px;
-      opacity:0.95;
-    }
-
-    /* Responsive tweaks */
-    @media (max-width:640px){
-      header img{ width:64px; height:64px; }
-      .hero{ flex-direction:column; align-items:flex-start; }
-      .cta { font-size:15px; padding:14px; max-width:100%; }
-      .wrap{ padding:10px 8px; min-height: calc(100vh - 140px); }
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <!-- Make sure file is named exactly: logo.png -->
-    <img src="logo.png" alt="Aqua Underground Logo" />
-    <div class="brand">
-      <h1>Aqua Underground Water Leak Solutions</h1>
-      <p class="small">Exact Underground Leak Detection • No Breakage • Fast & Professional Service</p>
-    </div>
-  </header>
+  <!-- TOP CENTER LOGO + BRAND -->
+  <div class="top">
+    <img src="logo.png" alt="Logo" />
+    <div class="title">Aqua Underground Water Leak Solutions</div>
+    <div class="tag">Exact Underground Leak Detection • No Breakage • Fast & Professional Service</div>
+  </div>
 
+  <!-- MAIN CONTENT -->
   <main>
-    <div class="wrap">
 
-      <section class="hero" aria-labelledby="why">
-        <div class="hero-left">
-          <h2 id="why">Why Choose Aqua Underground?</h2>
-          <p>हमारी team high-tech machines से बिना तोड़फोड़ के exact leak point detect करती है — जल्दी, सटीक और सुरक्षित।</p>
+    <h2>Why Choose Us?</h2>
 
-          <div class="cards" style="margin-top:12px;">
-            <div class="card">
-              <strong>✔ Zero Breakage Detection</strong>
-              Pipe leak का exact point detect करते हैं बिना अनावश्यक तोड़फोड़ के।
-            </div>
-
-            <div class="card">
-              <strong>✔ High-Tech Machines</strong>
-              Thermal Scanner • Ultrasonic Scanner • Pressure Mapping Technology.
-            </div>
-
-            <div class="card">
-              <strong>✔ Save Time & Money</strong>
-              जल्दी detection से बड़े नुकसान और repair cost बचती है।
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <h3 style="color:var(--accent); margin:0 0 8px 0;">Service Areas</h3>
-        <p class="service-small">Punjab: Jalandhar · Ludhiana · Amritsar · Mohali · Chandigarh · Patiala · Bathinda · Moga · Ferozepur · Gurdaspur · Hoshiarpur · Kapurthala<br>
-        Himachal: Shimla · Mandi · Kangra · Hamirpur · Dharamshala · Solan · Una</p>
-      </section>
-
-      <div style="display:flex; justify-content:center; margin-top:6px;">
-        <!-- WA link already updated with your number -->
-        <a class="cta" href="https://wa.me/916913131304?text=Hello%20Aqua%20Underground%20Team%2C%20I%20want%20to%20book%20a%20leak%20detection%20service." target="_blank" rel="noopener noreferrer">
-          📞 Contact on WhatsApp — Book Now
-        </a>
-      </div>
-
+    <div class="card">
+      <strong>✔ Zero Breakage Detection</strong>
+      Pipe leak का exact point detect करते हैं बिना तोड़फोड़ के।
     </div>
-  </main>
 
-  <footer>
-    © 2025 Aqua Underground Water Leak Solutions — Exact Underground Leak Detection
-  </footer>
+    <div class="card">
+      <strong>✔ High-Tech Machines</strong>
+      Thermal Scanner • Ultrasonic Scanner • Pressure Mapping Technology.
+    </div>
 
-</body>
-</html>    <h2>Service Areas</h2>
-    Punjab: Jalandhar · Ludhiana · Amritsar · Mohali · Chandigarh · Patiala · Bathinda · Moga · Ferozepur · Gurdaspur · Hoshiarpur · Kapurthala  
-    Himachal: Shimla · Mandi · Kangra · Hamirpur · Dharamshala · Solan · Una
+    <div class="card">
+      <strong>✔ Save Time & Money</strong>
+      Leak जल्दी detect होने से big damages और repair cost बचती है।
+    </div>
 
-    <h2 style="margin-top:25px;">Book Now</h2>
-    <a href="https://wa.me/916913131304?text=Hello%20Aqua%20Underground%20Team%2C%20I%20want%20to%20book%20a%20leak%20detection%20service." target="_blank" rel="noopener noreferrer">
-      <button>📞 Contact on WhatsApp</button>
+    <h2>Service Areas</h2>
+    <div class="areas">
+      Punjab: Jalandhar • Ludhiana • Amritsar • Mohali • Chandigarh • Patiala • Bathinda •  
+      Moga • Ferozepur • Gurdaspur • Hoshiarpur • Kapurthala  
+      <br/>Himachal: Shimla • Mandi • Kangra • Hamirpur • Dharamshala • Solan • Una
+    </div>
+
+    <!-- WHATSAPP BUTTON -->
+    <a class="cta" 
+       href="https://wa.me/916913131304?text=Hello%20Aqua%20Team%2C%20I%20want%20to%20book%20underground%20leak%20detection."
+       target="_blank">
+       📞 Contact on WhatsApp — Book Now
     </a>
 
-  </section>
+  </main>
 
   <footer>
     © 2025 Aqua Underground Water Leak Solutions
