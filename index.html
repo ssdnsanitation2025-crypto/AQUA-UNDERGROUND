@@ -1,159 +1,164 @@
 <!doctype html>
-<html lang="en">
+<html lang="hi">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Aqua Underground — Leak Detection</title>
+  <title>Aqua Underground — Leak Detection Service</title>
 
   <style>
     :root{
-      --accent:#FFC300;
-      --bg:#042b42;
-      --card:#083a57;
-      --muted:#c7d7ea;
+      --yellow:#FFC300;
+      --blue1:#032F4C;
+      --blue2:#02283F;
+      --muted:#D6E8F5;
     }
     body{
       margin:0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: linear-gradient(180deg, #052b42 0%, #033649 100%);
+      font-family:"Segoe UI",Roboto,Arial,sans-serif;
+      background:linear-gradient(180deg,#032F4C,#02283F);
       color:white;
       text-align:center;
     }
 
-    /* TOP SECTION */
-    .top{
-      padding:25px 12px 10px;
+    /* LOGO + TITLE */
+    .logo-box{
+      margin-top:25px;
+      margin-bottom:10px;
     }
-    .top img{
-      width:120px;
-      height:120px;
+    .logo{
+      width:140px;
+      height:140px;
       object-fit:contain;
-      border-radius:12px;
-      background:#03344c;
+      border-radius:18px;
+      background:#06395770;
       padding:10px;
-      display:block;
-      margin:0 auto 10px;
+      box-shadow:0 8px 22px rgba(0,0,0,0.4);
     }
     .title{
-      font-size:20px;
-      font-weight:700;
-      color:var(--accent);
-      margin-bottom:4px;
+      font-size:22px;
+      font-weight:800;
+      margin-top:10px;
+      color:var(--yellow);
     }
-    .tag{
+    .subtitle{
       font-size:13px;
       color:var(--muted);
-      margin-bottom:18px;
+      margin-bottom:20px;
     }
 
-    /* CARDS */
-    main{
-      padding:10px 12px 30px;
+    /* HERO IMAGE */
+    .hero{
+      width:92%;
       max-width:900px;
-      margin:auto;
+      border-radius:14px;
+      margin:0 auto 25px;
+      display:block;
+      box-shadow:0 12px 28px rgba(0,0,0,0.55);
+    }
+
+    /* SECTIONS */
+    .section{
+      width:90%;
+      max-width:900px;
+      margin:0 auto 25px;
       text-align:left;
     }
-    h2{
-      color:var(--accent);
-      margin:12px 0;
+    .section h2{
+      color:var(--yellow);
       font-size:18px;
+      margin-bottom:8px;
     }
     .card{
-      background:var(--card);
-      padding:12px;
-      border-radius:10px;
-      margin-bottom:10px;
-      border:1px solid rgba(255,255,255,0.06);
+      background:#06395780;
+      padding:14px;
+      border-radius:12px;
+      margin-bottom:12px;
+      border:1px solid rgba(255,255,255,0.05);
       font-size:14px;
+      line-height:1.5;
+      box-shadow:0 6px 16px rgba(0,0,0,0.3);
     }
     .card strong{
-      color:var(--accent);
+      color:var(--yellow);
+      font-size:15px;
       display:block;
-      margin-bottom:5px;
+      margin-bottom:6px;
     }
 
-    /* SERVICE AREA TEXT */
-    .areas{
-      color:var(--muted);
-      line-height:1.6;
-      font-size:13px;
-    }
-
-    /* WHATSAPP CTA BUTTON */
-    .cta{
-      margin-top:22px;
+    /* WHATSAPP BUTTON (Your EXACT Style) */
+    .cta-btn{
       display:block;
       width:90%;
-      max-width:500px;
+      max-width:650px;
+      margin:25px auto;
+      background:var(--yellow);
+      padding:18px 20px;
+      border-radius:18px;
+      color:#042A2A;
       text-decoration:none;
-      background:var(--accent);
-      color:#062331;
-      font-size:16px;
-      font-weight:700;
-      padding:14px;
-      border-radius:10px;
-      margin-left:auto;
-      margin-right:auto;
-      box-shadow:0 10px 22px rgba(0,0,0,0.3);
+      font-size:20px;
+      font-weight:800;
+      box-shadow:0 12px 30px rgba(255,195,0,0.25), 0 0 30px rgba(255,195,0,0.2) inset;
     }
 
     footer{
-      text-align:center;
-      padding:20px 10px;
-      color:#b8d4e6;
-      font-size:12px;
+      margin-top:30px;
+      font-size:13px;
+      color:#bcd7e4;
+      padding-bottom:40px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- TOP CENTER LOGO + BRAND -->
-  <div class="top">
-    <img src="logo.png" alt="Logo" />
+  <!-- LOGO + TITLE -->
+  <div class="logo-box">
+    <img src="logo.png" class="logo" alt="Logo">
     <div class="title">Aqua Underground Water Leak Solutions</div>
-    <div class="tag">Exact Underground Leak Detection • No Breakage • Fast & Professional Service</div>
+    <div class="subtitle">Exact Leak Detection • No Breakage • Fast & Professional Service</div>
   </div>
 
-  <!-- MAIN CONTENT -->
-  <main>
+  <!-- HERO IMAGE -->
+  <img src="hero.png" class="hero" alt="Leak Detection">
 
-    <h2>Why Choose Us?</h2>
+  <!-- WHY CHOOSE SECTION -->
+  <div class="section">
+    <h2>Why Choose Aqua Underground?</h2>
 
     <div class="card">
       <strong>✔ Zero Breakage Detection</strong>
-      Pipe leak का exact point detect करते हैं बिना तोड़फोड़ के।
+      Pipe leak का exact point detect करते हैं — बिना extra तोड़फोड़।
     </div>
 
     <div class="card">
       <strong>✔ High-Tech Machines</strong>
-      Thermal Scanner • Ultrasonic Scanner • Pressure Mapping Technology.
+      Thermal Scanner • Ultrasonic Scanner • Pressure Mapping Technology
     </div>
 
     <div class="card">
       <strong>✔ Save Time & Money</strong>
-      Leak जल्दी detect होने से big damages और repair cost बचती है।
+      Leak जल्दी पकड़ लेने से बड़ा नुकसान और repair cost बचती है।
     </div>
+  </div>
 
+  <!-- AREAS -->
+  <div class="section">
     <h2>Service Areas</h2>
-    <div class="areas">
-      Punjab: Jalandhar • Ludhiana • Amritsar • Mohali • Chandigarh • Patiala • Bathinda •  
-      Moga • Ferozepur • Gurdaspur • Hoshiarpur • Kapurthala  
-      <br/>Himachal: Shimla • Mandi • Kangra • Hamirpur • Dharamshala • Solan • Una
+    <div style="color:#D6E8F5; font-size:14px; line-height:1.6;">
+      Punjab: Jalandhar • Ludhiana • Amritsar • Mohali • Chandigarh • Patiala • Bathinda • Moga • Ferozepur • Gurdaspur • Hoshiarpur • Kapurthala<br>
+      Himachal Pradesh: Shimla • Mandi • Kangra • Hamirpur • Dharamshala • Solan • Una
     </div>
+  </div>
 
-    <!-- WHATSAPP BUTTON -->
-    <a class="cta" 
-       href="https://wa.me/916913131304?text=Hello%20Aqua%20Team%2C%20I%20want%20to%20book%20underground%20leak%20detection."
-       target="_blank">
-       📞 Contact on WhatsApp — Book Now
-    </a>
+  <!-- CTA BUTTON EXACT STYLE -->
+  <a class="cta-btn"
+     href="https://wa.me/916913131304?text=Hello%20Aqua%20Team%2C%20I%20want%20to%20book%20a%20leak%20detection%20service"
+     target="_blank">
+     🚀 अपनी Leak Detection Book करें — WhatsApp पर बात करें
+  </a>
 
-  </main>
-
-  <footer>
-    © 2025 Aqua Underground Water Leak Solutions
-  </footer>
+  <footer>© 2025 Aqua Underground Water Leak Solutions. All Rights Reserved.</footer>
 
 </body>
 </html>
